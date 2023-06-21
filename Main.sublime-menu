@@ -1,0 +1,186 @@
+[{
+		"caption": "CAFTeradata",
+		"mnemonic": "C",
+		"id": "cafteradata",
+		"children": [{
+				"caption": "Run Query",
+				"command": "sa_run_sql_cmd",
+				"args": {
+					"limit": 300,
+					"number_of_cache_query": 20,
+					"timeout": 180,
+					"output_in_panel": false,
+					"queries":null
+				}
+			}, {
+				"caption": "Run Query, Show all result",
+				"command": "sa_run_sql_cmd",
+				"args": {
+					"limit": false,
+					"number_of_cache_query": 20,
+					"timeout": 180,
+					"output_in_panel": false,
+					"queries":null
+				}
+			}, {
+				"caption": "Select Current Query",
+				"command": "expand_selection_to_semicolon",
+				"args": {
+					"mode": "select"
+				}
+			}, {
+				"caption": "Format Query",
+				"command": "sa_format"
+			}, {
+				"caption": "Browse Metadata",
+				"command": "meta_browse_connection",
+				"args": {
+					"current": true
+				}
+			}, {
+				"caption": "Select Connection Group",
+				"command": "meta_select_connection"
+			}, {
+				"caption": "Connection-Group",
+				"children": [{
+						"caption": "Add Metadata to Connection Group",
+						"command": "meta_add",
+						"args": {
+							"load_dtype": true
+						}
+					}, {
+						"caption": "Load all Metadata",
+						"command": "meta_init",
+					}, {
+						"caption": "Import Connection Group",
+						"command": "meta_import_local_connection"
+					},
+
+					{
+						"caption": "Delete Connection Group",
+						"command": "meta_delete_connection",
+						"args": {
+							"msg": "Please choose following Connection Group to delete"
+						},
+					}, {
+						"caption": "Remove table from Connection Group",
+						"command": "meta_remove_table_in_conn_group",
+						"args": {
+							"msg": "Please choose following Connection Group to remove table"
+						},
+					}, {
+						"caption": "Update Connection Group",
+						"command": "meta_update_connection"
+					},
+
+					{
+						"caption": "Open Current Connection Group",
+						"command": "meta_open_current_connection"
+					}
+				]
+			}, {
+				"caption": "KeyMap",
+				"children": [{
+					"caption": "View CAFTeradata KeyMap in Read-Only",
+					"command": "view_keymap",
+					"args": {
+						"read_only": true
+					}
+				}, {
+					"caption": "Edit CAFTeradata KeyMap",
+					"command": "view_keymap",
+					"args": {
+						"read_only": false
+					}
+				}]
+			}, {
+				"caption": "Miscellaneous",
+				"children": [{
+						"caption": "Interrupt Query",
+						"command": "sa_interrupt_query"
+					}, {
+						"caption": "Restart Connection",
+						"command": "sa_restart_connection"
+					},
+
+					{
+						"caption": "Add/remove Dot",
+						"command": "sa_add_dot_in_word_sep"
+					}, {
+						"caption": "Set Password",
+						"command": "meta_password"
+					}, {
+						"caption": "Clear Cache",
+						"command": "sa_clear_cache"
+					}
+				],
+			}, {
+				"caption": "View/Tab Management",
+				"children": [{
+					"caption": "Rename Tab",
+					"command": "rename_view"
+				}, {
+					"caption": "To Right",
+					"command": "set_layout",
+					"args": {
+						"cols": [0.0, 0.55, 1.0],
+						"rows": [0.0, 1.0],
+						"cells": [
+							[0, 0, 1, 1],
+							[1, 0, 2, 1]
+						]
+					}
+				}, {
+					"caption": "To Bottom",
+					"command": "set_layout",
+					"args": {
+						"cols": [0.0, 1.0],
+						"rows": [0.0, 0.55, 1.0],
+						"cells": [
+							[0, 0, 1, 1],
+							[0, 1, 1, 2]
+						]
+					}
+				}, {
+					"caption": "Sort Query Results",
+					"command": "sort_tabs_in_order",
+
+				}, {
+					"caption": "Minimize/Enlarge",
+					"command": "resize_window_group",
+
+				}, {
+					"caption": "View Zoom In",
+					"command": "view_zoom",
+					"args": {
+						"zoomin": true
+					}
+				}, {
+					"caption": "View Zoom out",
+					"command": "view_zoom",
+					"args": {
+						"zoomin": false
+					}
+				}, ],
+			},
+
+
+
+		],
+
+
+
+	},
+
+	{
+		"caption": "Clone Settings",
+		"command": "set_tools",
+		"mnemonic": "S",
+		"id": "settools",
+	},
+	{
+		"caption": "Data Dictionary",
+		"command": "data_dictionary",
+		"id": "data_dictionary"
+	}
+]

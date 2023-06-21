@@ -1,0 +1,141 @@
+[{
+	"caption": "CAFTeradata: Run Query",
+	"command": "sa_run_sql_cmd",
+	"args": {
+		"limit": 300,
+		"number_of_cache_query": 20,
+		"timeout": 180,
+		"output_in_panel": false,
+		"queries":null
+
+	}
+},{
+	"caption": "CAFTeradata: Run Query, show all",
+	"command": "sa_run_sql_cmd",
+	"args": {
+		"limit": false,
+		"number_of_cache_query": 20,
+		"timeout": 180,
+		"output_in_panel": false,
+		"queries":null
+
+
+	}
+}, {
+	"caption": "CAFTeradata: Select Current Query",
+	"command": "expand_selection_to_semicolon",
+	"args": {
+		"mode": "select"
+	}
+}, {
+	"caption": "CAFTeradata: Clear Query Cache",
+	"command": "sa_clear_cache"
+}, {
+	"caption": "CAFTeradata: Format Query",
+	"command": "sa_format"
+}, {
+	"caption": "CAFTeradata: Interrupt Running Query",
+	"command": "sa_interrupt_query"
+}, {
+	"caption": "CAFTeradata: Restart Teradata Connection",
+	"command": "sa_restart_connection"
+}, {
+	"caption": "CAFTeradata: Add/remove Dot as Word Separtor",
+	"command": "sa_add_dot_in_word_sep"
+}, {
+	"caption": "CAFTeradata: Setup Teradata Username and PW to cache",
+	"command": "meta_password"
+}, {
+	"caption": "CAFTeradata: Grab all Metadata to a connection group",
+	"command": "meta_init"
+}, {
+	"caption": "CAFTeradata: Add Metadata to a New or Exist Conn Group",
+	"command": "meta_add",
+	"args": {
+		"load_dtype": true
+	}
+}, {
+	"caption": "CAFTeradata: Select Conn Group",
+	"command": "meta_select_connection"
+}, {
+	"caption": "CAFTeradata: Delete a Conn Group",
+	"command": "meta_delete_connection",
+	"args": {
+            "msg": "Please choose following Connection Group to delete"
+    },
+}, 
+{
+	"caption": "CAFTeradata: Remove table from Connection Group",
+    "command": "meta_remove_table_in_conn_group",
+    "args": {
+        "msg": "Please choose following Connection Group to remove table"
+    },
+},
+{
+	"caption": "CAFTeradata: Update all Metadata in a Conn Group",
+	"command": "meta_update_connection"
+}, {
+	"caption": "CAFTeradata: Open Current Selected Conn Group",
+	"command": "meta_open_current_connection"
+}, {
+	"caption": "CAFTeradata: Browse Current Conn group's columns",
+	"command": "meta_browse_connection",
+	"args": {
+		"current": true
+	}
+}, {
+	"caption": "CAFTeradata: Import Conn Group from Local",
+	"command": "meta_import_local_connection"
+}, {
+	"caption": "CAFTeradata View Keymap in read-only",
+	"command": "view_keymap",
+	"args": {
+		"read_only": true
+	}
+}, {
+	"caption": "CAFTeradata: Edit Keymap",
+	"command": "view_keymap",
+	"args": {
+		"read_only": false
+	}
+}, {
+	"caption": "CAFTabManagement: Rename Tab",
+	"command": "rename_view"
+}, {
+	"caption": "CAFTabManagement: To Right",
+	"command": "set_layout",
+	"args": {
+		"cols": [0.0, 0.55, 1.0],
+		"rows": [0.0, 1.0],
+		"cells": [
+			[0, 0, 1, 1],
+			[1, 0, 2, 1]
+		]
+	}
+}, {
+	"caption": "CAFTabManagement: To Bottom",
+	"command": "set_layout",
+	"args": {
+		"cols": [0.0, 1.0],
+		"rows": [0.0, 0.55, 1.0],
+		"cells": [
+			[0, 0, 1, 1],
+			[0, 1, 1, 2] 
+		]
+	}
+}, {
+	"caption": "CAFTabManagement: Minimize/Enlarge",
+	"command": "resize_window_group",
+
+},
+ {
+ 	"caption": "CAFTabManagement: Sort Query Results",
+ 	"command": "sort_tabs_in_order",
+
+ },
+
+{
+	"caption": "CAFSetUp: Set up CAF Sublime Keybind and Setting",
+	"command": "set_tools"
+},
+]

@@ -1,0 +1,7 @@
+metastore/cache_query.json
+metastore/EDW_SQL*
+metastore/*connection-group
+metastore/all.drop-down
+!metastore
+EDW_SQL.sublime-completions
+venv

@@ -1,0 +1,74 @@
+low-hanging-fruit:
+  # 1: wordalign = center;
+  # 2: cache the result ;
+  # 3: limit ;                                                                                      Done
+  # 4: progress second below ;
+  # 5: remove cache;
+  # 6: add and build new meta ;
+  # 7: column sign in meta;
+  # 8: unwrite output console ;
+  # 9: automatic center for output window;
+  # 10: create and drop statement may not run;
+  11: select a problematic table will be slow (select * from workdb.stanleytest);
+  12: more word highlight(SQL.syntax);
+  # 13: buffer control, not from other file ;
+  14: column centered, content not centered;
+  15: load settings instead from keytab preference ;
+  # 17: select a.* autofill and alias ;
+  # 18: interrupt the query ;
+  # 19: column type in build method ;
+  # 16: after load autocomplete from eventlisner, revert db.tbl from one word to two word (word-seperator regex);
+  #     temporary solution, a little bit buggy, in case ws not equal dot or nondot 
+  20: timestamp helper, format as same as teradata? ;
+  23: snippet language 
+  24: Colorful dtype, flag 
+  28: query result to excel
+  30: show pannel in function 
+  31: create a new syntax file called teradata or edw_sql so that eventlisner only trigger on this syntax 
+
+Critical: 
+  # 25: number of cached query out of total cache, test if cache is in effect
+  # 26: select connection (create connection group)
+  # 27: create feature to browse edw db 
+  28: stronger hint when no meta for specif table, easy to miss now 
+  29: consider to put every metadata in lower case 
+  30: move cursor to head of select 
+  31: add alias and autocompletion using sqlparse in #table 
+  # 32: refresh a specific conn, lock down all connection 
+  33: consider mi will not remove other connection group, and back fill connection-group-list
+  34: maxium num of time out and restart connection 
+  # 35: auto fill whole query alias not assigned 
+  # 36: select * from #ficos has bug 
+  # 37: show finish ts in create statement 
+  38: prompt user sample is added or not 
+  39: go to previous select and better select current query method 
+  40: save both query and result
+  21: ctrl+q can select with preceding semicolon but without ending semicolon;
+  41: .sublime-completion, create a txt_show, currently only has txt_to_autocomplete as txt_show
+
+
+Bug: 
+  # 1: sample and order by is conflict, should use top 10 * to disable sample 
+  2: stop query not quite work...  the thread is still active after ctrl e i 
+
+dream: 
+  22: Really fancy, autocomplete in SQL query while the query is written in Python as multiple line string
+  26: threading as a decorator on class, instead of doing this everytime
+  27: sublime channel 
+  # 28: on_open auto use json format
+  29: on_load will only trigger the .costome-completions
+  30: More generic connect.py, user has a json to control which edw instance, snowflake, dl to connect 
+  31: change word-seperator
+
+
+newland: 
+  42: fuzzy select select *cur* return fnc_cur_app_num, fnc_cur_term
+  43: if alias a exist in current file, create alias b automatically 
+
+
+
+01/24/2023: ;
+
+tab right click to csv
+ctrl + e e to csv
+ctrl + e e all to csv

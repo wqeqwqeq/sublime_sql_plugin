@@ -1,0 +1,9 @@
+{
+	// Please paste this in user settings! 
+	// ctrl+shift+p open panel, then type preference:setting, hit enter
+	//Then paste below text on your right window
+
+	"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?",
+	"auto_complete_commit_on_tab": true,
+
+}

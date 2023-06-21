@@ -1,0 +1,7 @@
+[
+  { "caption": "-" },
+  { "caption": "CAF: Rename Tab" ,"command": "rename_view","mnemonic": "R",  },
+  { "caption": "CAF: To CSV" ,"command": "tbl_to_csv","mnemonic": "T",  },
+  { "caption": "CAF: Transpose Compare" ,"command": "tbl_transpose" }
+  // { "caption": "CAF: Set/Unset close prompt" ,"command": "set_as_scratch"  },
+]

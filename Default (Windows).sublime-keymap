@@ -1,0 +1,185 @@
+[{
+        "keys": ["ctrl+q"],
+        "command": "expand_selection_to_semicolon",
+        "args": {
+            "mode": "select"
+        }
+    },
+
+    {
+        "keys": ["ctrl+e", "ctrl+e"],
+        "command": "sa_run_sql_cmd",
+        "args": {
+            "limit": 300,
+            "number_of_cache_query": 20,
+            "timeout": 180,
+            "output_in_panel": false,
+            "queries":null
+        }
+    },    
+    {
+        "keys": ["ctrl+e", "ctrl+a"],
+        "command": "sa_run_sql_cmd",
+        "args": {
+            "limit": false,
+            "number_of_cache_query": 20,
+            "timeout": 180,
+            "output_in_panel": false,
+            "queries":null
+        }
+    }, {
+        "keys": ["ctrl+e", "ctrl+c"],
+        "command": "sa_clear_cache"
+    }, {
+        "keys": ["ctrl+e", "ctrl+b"],
+        "command": "sa_format"
+    }, {
+        "keys": ["ctrl+e", "ctrl+i"],
+        "command": "sa_interrupt_query"
+    }, {
+        "keys": ["ctrl+e", "ctrl+r"],
+        "command": "sa_restart_connection"
+    },
+
+    {
+        "keys": ["ctrl+e", "ctrl+."],
+        "command": "sa_add_dot_in_word_sep"
+    },
+    // metadata/autocomplete plugin 
+    {
+        "keys": ["ctrl+m", "ctrl+p"],
+        "command": "meta_password"
+    }, 
+    // {
+    //     "keys": ["ctrl+m", "ctrl+i"],
+    //     "command": "meta_init",
+    // }, 
+    {
+        "keys": ["ctrl+m", "ctrl+a"],
+        "command": "meta_add",
+        "args": {
+            "load_dtype": true
+        }
+    }, {
+        "keys": ["ctrl+m", "ctrl+s"],
+        "command": "meta_select_connection"
+    }, {
+        "keys": ["ctrl+m", "ctrl+l"],
+        "command": "meta_import_local_connection"
+    },
+
+    {
+        "keys": ["ctrl+m", "ctrl+d"],
+        "command": "meta_delete_connection",
+        "args": {
+            "msg": "Please choose following Connection Group to delete"
+        },
+    },    {
+        "keys": ["ctrl+m", "ctrl+r"],
+        "command": "meta_remove_table_in_conn_group",
+        "args": {
+            "msg": "Please choose following Connection Group to remove table"
+        },
+    }, {
+        "keys": ["ctrl+m", "ctrl+u"],
+        "command": "meta_update_connection"
+    },
+
+    {
+        "keys": ["ctrl+m", "ctrl+o"],
+        "command": "meta_open_current_connection"
+    }, {
+        "keys": ["ctrl+m", "ctrl+b"],
+        "command": "meta_browse_connection",
+        "args": {
+            "current": true
+        }
+    }, {
+        "keys": ["ctrl+m", "ctrl+k"],
+        "command": "view_keymap",
+        "args": {
+            "read_only": true
+        }
+    }, 
+// view/tab management 
+    {
+        "keys": ["ctrl+m", "ctrl+n"],
+        "command": "rename_view"
+    }, {
+        "keys": ["ctrl+alt+right"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.55, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1]
+            ]
+        }
+    }, {
+        "keys": ["ctrl+alt+down"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.55, 1.0],
+            "cells": [
+                [0, 0, 1, 1],
+                [0, 1, 1, 2]
+            ]
+        }
+    }, {
+        "keys": ["f1"],
+        "command": "resize_window_group",
+
+    },
+    {
+        "keys": ["ctrl+e" , "ctrl+o"],
+        "command": "sort_tabs_in_order",
+
+    },    
+    {
+        "keys": ["alt+o" ],
+        "command": "view_zoom",
+        "args": {
+            "zoomin": false
+        },
+
+    },    
+    {
+        "keys": ["alt+i" ],
+        "command": "view_zoom",
+        "args": {
+            "zoomin": true
+        },
+
+    },
+
+// other commands
+        {
+        "keys": ["ctrl+0"],
+        "command": "expand_selection_to_semicolon",
+        "args": {
+            "mode": "Done",
+            "endstart": 100
+        }
+    }, {
+        "keys": ["ctrl+9"],
+        "command": "expand_selection_to_semicolon",
+        "args": {
+            "mode": "Not Done",
+            "endstart": 100
+        }
+    }, {
+        "keys": ["ctrl+8"],
+        "command": "insert_today_date"
+    },
+    {
+        "keys": ["ctrl+'"],
+        "command": "expand_selection_to_quotes"
+    }, 
+// setup tool
+    // {
+    //     "keys": ["ctrl+e", "ctrl+s"],
+    //     "command": "set_tools"
+    // }
+]
