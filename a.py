@@ -6,8 +6,8 @@ import sys
 # path hub and name hub
 
 
-plugin_name = "Sublime_Teradata_Plugin.sublime-package"
-package_path = sublime.installed_packages_path()
+plugin_name = "Sublime_Teradata_Plugin"
+package_path = sublime.packages_path()
 plugin_path = f"{package_path}\\{plugin_name}"
 
 sys_path = f"{package_path}\\{plugin_name}\\lib"
