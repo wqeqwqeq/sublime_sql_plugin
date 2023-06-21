@@ -4,7 +4,7 @@ import sys
 import os
 import base64
 
-
+print("connect", sys.path)
 import pyodbc
 import decimal
 from datetime import datetime, timedelta, date

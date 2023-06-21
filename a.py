@@ -27,3 +27,18 @@ metastore_path = f"{plugin_path}\\metastore"
 connection_group_list_path = f"{metastore_path}\\EDW_SQL.connection-group-list"
 cache_path = os.path.join(package_path, plugin_name, "metastore", "cache_query.json")
 user_path = os.path.join(package_path, "User")
+
+print(sys.path, "\n\n")
+
+print(metastore_path)
+print(connection_group_list_path)
+print(cache_path)
+print(user_path)
+
+
+print(plugin_name)
+print(package_path)
+print(plugin_path)
+print(sys_path)
+print(sys_path2)
+print(lib_path)

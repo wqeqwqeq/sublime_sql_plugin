@@ -9,7 +9,7 @@ import time
 import ctypes
 import csv
 
-
+print("run_sql", sys.path)
 import pyodbc
 from tabulate import tabulate
 from connect import teradata_connect
