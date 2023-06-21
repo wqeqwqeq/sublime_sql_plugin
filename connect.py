@@ -5,6 +5,10 @@ import os
 import base64
 
 print("connect", sys.path)
+directory = os.path.dirname(os.path.realpath(__file__))
+lib_path = os.path.join(directory, "lib")
+sys.path.append(lib_path)
+print("connect2", sys.path)
 import pyodbc
 import decimal
 from datetime import datetime, timedelta, date
