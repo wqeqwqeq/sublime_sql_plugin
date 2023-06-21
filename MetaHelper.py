@@ -10,17 +10,7 @@ import ctypes
 import csv
 
 # need to dynamic later
-package_path = sublime.packages_path()
-lib_path = f"{package_path}\\Sublime_Teradata_Plugin\\lib"
-plugin_path = f"{package_path}\\Sublime_Teradata_Plugin"
-metastore_path = f"{plugin_path}\\metastore"
-connection_group_list_path = f"{metastore_path}\\EDW_SQL.connection-group-list"
 
-
-if lib_path not in sys.path:
-    sys.path.append(lib_path)
-if plugin_path not in sys.path:
-    sys.path.append(plugin_path)
 
 from connect import teradata_connect, crypt
 

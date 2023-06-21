@@ -10,10 +10,6 @@ import threading
 import ctypes
 
 
-package_path = sublime.packages_path()
-user_path = os.path.join(package_path, "User")
-
-
 def rmtree(top):
     for root, dirs, files in os.walk(top, topdown=False):
         for name in files:
@@ -99,7 +95,6 @@ class SetTools(sublime_plugin.WindowCommand):
         os.startfile(user_path)
         is_confirm = self.confirm_msg()
         if is_confirm:
-
             keybind = run_cmd(
                 "git clone https://github.carmax.com/CarMax/sublime_stanley-s_setting.git"
             )
@@ -144,7 +139,6 @@ at {user_path}
             f.write(file)
 
     def confirm_msg(self):
-
         msg = f"""Welcome to CAF Sublime Tools keybind/setting Setup :) 
 Please confirm below message before click OK!!!
 

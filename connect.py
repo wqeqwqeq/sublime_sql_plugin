@@ -4,13 +4,6 @@ import sys
 import os
 import base64
 
-package_path = sublime.packages_path()
-sys_path = f"{package_path}\\Sublime_Teradata_Plugin\\lib"
-sys_path2 = f"{package_path}\\Sublime_Teradata_Plugin"
-if sys_path not in sys.path:
-    sys.path.append(sys_path)
-    sys.path.append(sys_path2)
-
 
 import pyodbc
 import decimal

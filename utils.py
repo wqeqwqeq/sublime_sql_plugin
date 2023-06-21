@@ -3,14 +3,10 @@ import sublime_plugin
 import os
 from operator import itemgetter
 
-package_path = sublime.packages_path()
-plugin_path = f"{package_path}\\Sublime_Teradata_Plugin"
-
 
 class ViewKeymap(sublime_plugin.WindowCommand):
     def run(self, read_only):
         if read_only:
-
             with open(f"{plugin_path}\\Default (Windows).sublime-keymap", "r") as f:
                 file = f.read()
             self.window.new_file()
@@ -26,7 +22,7 @@ class ViewKeymap(sublime_plugin.WindowCommand):
             self.window.run_command(
                 "open_file",
                 args={
-                    "file": "${packages}/Sublime_Teradata_Plugin/Default (Windows).sublime-keymap"
+                    "file": "${packages}/{plugin_name}/Default (Windows).sublime-keymap"
                 },
             )
 
@@ -106,7 +102,6 @@ class SortTabsInOrder(sublime_plugin.TextCommand):
         win = self.view.window()
         curr_view = win.active_view()
         for vw in win.views():
-
             if vw.file_name() is not None:
                 panel_name = os.path.basename(vw.file_name())
                 panel_name = panel_name.lower()

@@ -36,9 +36,6 @@ class color:
 
 # do we need to lower the completion column?
 
-package_path = sublime.packages_path()
-metastore_path = f"{package_path}\\Sublime_Teradata_Plugin\\metastore"
-
 
 def load_alias():
     resource = sublime.find_resources("EDW_SQLAlias.custom-completions")
@@ -50,7 +47,7 @@ def load_alias():
 
 
 def write_to_alias(alias_dict):
-    os.chdir(sublime.packages_path())
+    os.chdir(sublime.installed_packages_path())
     os.chdir("..")
 
     jsonValues, file = load_alias()
@@ -67,7 +64,6 @@ def write_to_alias(alias_dict):
 
 class EventListener(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
-
         # find table as a pattern IN
         def is_alias(view, cursor, all_tables):
             # load setting for word sep, uncheck space then bring it back

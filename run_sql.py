@@ -10,19 +10,6 @@ import ctypes
 import csv
 
 
-# need to dynamic later
-package_path = sublime.packages_path()
-cache_path = os.path.join(
-    package_path, "Sublime_Teradata_Plugin", "metastore", "cache_query.json"
-)
-sys_path = f"{package_path}\\Sublime_Teradata_Plugin\\lib"
-sys_path2 = f"{package_path}\\Sublime_Teradata_Plugin"
-
-
-if sys_path not in sys.path:
-    sys.path.append(sys_path)
-    sys.path.append(sys_path2)
-
 import pyodbc
 from tabulate import tabulate
 from connect import teradata_connect
@@ -627,7 +614,6 @@ class DataDictionary(sublime_plugin.WindowCommand):
             db_lst.add(db)
             tbl_lst.add(db_tbl)
             col_lst.add(db_tbl_col)
-
 
         self.col_lst = list(db_lst) + list(tbl_lst) + list(col_lst)
         self.window.show_quick_panel(self.col_lst, self.on_done, 0, 0)
