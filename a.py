@@ -6,7 +6,7 @@ import sys
 # path hub and name hub
 
 
-plugin_name = "sublime_sql_tool"
+plugin_name = "Sublime_Teradata_Plugin.sublime-package"
 package_path = sublime.installed_packages_path()
 plugin_path = f"{package_path}\\{plugin_name}"
 
